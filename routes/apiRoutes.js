@@ -34,8 +34,8 @@ module.exports = function (app) {
         request(options, function (error, response, body) {
             if (error) throw new Error(error);
             var results = JSON.parse(body);
-            console.log(results);
-            res.send(results);
+            console.log(results.businesses);
+            res.send(results.businesses);
         });
 
         
